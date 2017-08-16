@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quote Me!</title>
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body ng-app="quoteApp">
+
+	<div class="container">
+		<h1>Quote Wars</h1>
+		<div id="quote" ng-controller="quoteCtrl">
+			<h3 id="quote-text">"{{quote.text}}"</h3>
+			<span id="quote-author">- {{quote.author}}</span>
+		</div>
+	</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+<script src="app.js"></script>
+</html>
